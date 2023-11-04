@@ -1,0 +1,8 @@
+config BR2_PACKAGE_LVGL
+	bool "lvgl"
+	help
+	  LVGL is a graphics library targeting microcontrollers with limited
+	  resources. However it possible to use it to create embedded GUIs with
+	  high-end microprocessors and boards running Linux operation system.
+
+	  https://github.com/lvgl/lvgl

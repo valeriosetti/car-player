@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="480"
+   viewBox="0 0 211.66667 127"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10902">
+      <stop
+         style="stop-color:#ffb380;stop-opacity:1"
+         offset="0"
+         id="stop10898" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="1"
+         id="stop10900" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10272">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="0"
+         id="stop10268" />
+      <stop
+         style="stop-color:#ffb380;stop-opacity:1"
+         offset="1"
+         id="stop10270" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient7105"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop7103" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1126"
+       inkscape:collect="always">
+      <stop
+         id="stop1122"
+         offset="0"
+         style="stop-color:#00a0ff;stop-opacity:1" />
+      <stop
+         id="stop1124"
+         offset="1"
+         style="stop-color:#0000ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1120"
+       inkscape:collect="always">
+      <stop
+         id="stop1116"
+         offset="0"
+         style="stop-color:#00a0ff;stop-opacity:1" />
+      <stop
+         id="stop1118"
+         offset="1"
+         style="stop-color:#0000ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1081">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop1077" />
+      <stop
+         style="stop-color:#02a0ff;stop-opacity:1"
+         offset="1"
+         id="stop1079" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4626">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop4622" />
+      <stop
+         style="stop-color:#02a0ff;stop-opacity:1"
+         offset="1"
+         id="stop4624" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4581"
+       inkscape:swatch="gradient">
+      <stop
+         id="stop4591"
+         offset="0"
+         style="stop-color:#0000ff;stop-opacity:1;" />
+      <stop
+         id="stop4593"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1081"
+       id="radialGradient4642"
+       cx="99.114952"
+       cy="231.90289"
+       fx="99.114952"
+       fy="231.90289"
+       r="10.583333"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(16.683178,-34.918355)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4626"
+       id="radialGradient938"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(16.683178,-34.918355)"
+       cx="99.114952"
+       cy="231.90289"
+       fx="99.114952"
+       fy="231.90289"
+       r="10.583333" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1126"
+       id="radialGradient938-2"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-14.762266,-34.861318)"
+       cx="99.114952"
+       cy="231.90289"
+       fx="99.114952"
+       fy="231.90289"
+       r="10.583333" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1120"
+       id="radialGradient4642-2"
+       cx="99.114952"
+       cy="231.90289"
+       fx="99.114952"
+       fy="231.90289"
+       r="10.583333"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-14.762266,-34.861318)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10272"
+       id="radialGradient10274-5"
+       cx="79.408508"
+       cy="204.6095"
+       fx="79.408508"
+       fy="204.6095"
+       r="10.583334"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(36.957571,35.385247)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10902"
+       id="radialGradient10832"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6.2128031,35.683105)"
+       cx="79.408505"
+       cy="204.6095"
+       fx="79.408505"
+       fy="204.6095"
+       r="10.583334" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="260.56885"
+     inkscape:cy="278.60007"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1023"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-midpoints="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-169.99998)">
+    <circle
+       style="fill:url(#radialGradient938);fill-opacity:1;fill-rule:nonzero;stroke:url(#radialGradient4642);stroke-width:0.0690067;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4518"
+       cx="115.79813"
+       cy="196.98454"
+       r="10.54883"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:url(#radialGradient938-2);fill-opacity:1;fill-rule:nonzero;stroke:url(#radialGradient4642-2);stroke-width:0.0690067;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4518-9"
+       cx="84.352669"
+       cy="197.0416"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       rx="10.549"
+       ry="10.54883" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#f9f9f9;fill-opacity:0.9752;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8311"
+       width="9.7910776"
+       height="9.7910776"
+       x="35.87281"
+       y="183.44791"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/rect8311.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#f9f9f9;fill-opacity:0.9752;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect8311-4"
+       width="2.0017719"
+       height="9.7910786"
+       x="52.170734"
+       y="183.37814"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/rect8311-4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#f9f9f9;fill-opacity:0.9752;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect8311-4-4"
+       width="2.0017719"
+       height="9.7910786"
+       x="57.06628"
+       y="183.37814"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/rect8311-4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 20.050375,183.4527 v 9.79107 l 9.791076,-4.89553 -9.791076,-4.89554"
+       id="path8913"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path8913.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 25.094443,199.74494 v 9.79107 l 4.573376,-4.89554 -4.573376,-4.89554"
+       id="path8913-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path8913-7.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 29.667819,199.74493 v 9.79107 l 4.573376,-4.89554 -4.573376,-4.89554"
+       id="path8913-7-3"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path8913-7.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 52.024904,199.41027 v 9.79107 l -4.573376,-4.89554 4.573376,-4.89554"
+       id="path8913-7-1"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path8913-7-1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.451528,199.41026 v 9.79107 l -4.573376,-4.89554 4.573376,-4.89554"
+       id="path8913-7-3-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path8913-7-1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:url(#radialGradient10832);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect9883"
+       width="21.166666"
+       height="21.166666"
+       x="75.037971"
+       y="229.70927"
+       ry="4.7115664"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/rect9883.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:url(#radialGradient10274-5);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect9883-2"
+       width="21.166666"
+       height="21.166666"
+       x="105.78274"
+       y="229.41142"
+       ry="4.7115664"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/rect9883-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 45.194325,248.39308 4.239263,-11.21081"
+       id="path11556"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 46.200863,246.50274 5.352356,-3.71506"
+       id="path11556-7"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 52.666312,246.50274 -5.352356,-3.71506"
+       id="path11556-7-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.952957;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path13247"
+       sodipodi:type="arc"
+       sodipodi:cx="51.631081"
+       sodipodi:cy="236.31107"
+       sodipodi:rx="4.4482832"
+       sodipodi:ry="4.4482832"
+       sodipodi:start="4.7248314"
+       sodipodi:end="1.5253522"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 51.686427,231.86313 a 4.4482832,4.4482832 0 0 1 4.392331,4.37454 4.4482832,4.4482832 0 0 1 -4.245599,4.51709"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.952957;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path13247-1"
+       sodipodi:type="arc"
+       sodipodi:cx="51.096649"
+       sodipodi:cy="236.25681"
+       sodipodi:rx="3.1719935"
+       sodipodi:ry="2.9420435"
+       sodipodi:start="4.7248314"
+       sodipodi:end="1.5253522"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 51.136115,233.31499 a 3.1719935,2.9420435 0 0 1 3.132096,2.89327 3.1719935,2.9420435 0 0 1 -3.027463,2.98755"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.952957;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path13247-1-8"
+       sodipodi:type="arc"
+       sodipodi:cx="-47.626678"
+       sodipodi:cy="236.30144"
+       sodipodi:rx="3.1719935"
+       sodipodi:ry="2.9420435"
+       sodipodi:start="4.7248314"
+       sodipodi:end="1.5253522"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m -47.587212,233.35962 a 3.1719935,2.9420435 0 0 1 3.132095,2.89327 3.1719935,2.9420435 0 0 1 -3.027463,2.98755"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:0.952957;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path13247-4"
+       sodipodi:type="arc"
+       sodipodi:cx="-46.667435"
+       sodipodi:cy="236.28902"
+       sodipodi:rx="4.4482832"
+       sodipodi:ry="4.4482832"
+       sodipodi:start="4.7248314"
+       sodipodi:end="1.5253522"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m -46.612089,231.84108 a 4.4482832,4.4482832 0 0 1 4.392332,4.37454 4.4482832,4.4482832 0 0 1 -4.245599,4.51709"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 53.672851,248.39308 49.433588,237.18227"
+       id="path11556-8"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.261646;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path14702"
+       cx="49.361519"
+       cy="236.06616"
+       r="1.3229166"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path11556.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.261646;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="path14702-5"
+       cx="26.777416"
+       cy="247.82489"
+       r="1.3229166"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.261646;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="path14702-5-8"
+       cx="23.585545"
+       cy="239.34334"
+       r="1.3229166"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 26.857562,247.81246 V 232.67803"
+       id="path15466"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 26.856129,243.15505 2.96463,-2.53647 m 0.585529,0.56181"
+       id="path15466-9"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 26.732837,244.46607 -3.137759,-2.09868"
+       id="path15466-9-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.595078,242.36739 -0.0093,-2.62219"
+       id="path15466-9-5-3"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 29.820759,240.61858 -0.03071,-1.78474"
+       id="path15466-9-7"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect16619"
+       width="1.7247952"
+       height="1.6532502"
+       x="28.927654"
+       y="237.18059"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path17261"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="258.71277"
+       sodipodi:cy="261.08347"
+       sodipodi:r1="7.7788954"
+       sodipodi:r2="3.8894477"
+       sodipodi:arg1="1.0471976"
+       sodipodi:arg2="2.0943952"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 262.60222,267.82019 -5.83418,-3.36836 -5.83417,-3.36836 5.83418,-3.36837 5.83417,-3.36836 0,6.73673 z"
+       transform="matrix(0,0.12229539,-0.14810563,0,65.51932,200.54311)"
+       inkscape:transform-center-x="-0.074018723"
+       inkscape:transform-center-y="0.030725321"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path14702-5.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path17445"
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.404905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 26.281384,259.06228 a 5.0892138,5.0892133 0 0 0 -5.08961,5.0891 5.0892138,5.0892133 0 0 0 5.08961,5.08961 5.0892138,5.0892133 0 0 0 5.089096,-5.08961 5.0892138,5.0892133 0 0 0 -5.089096,-5.0891 z m 0,1.36736 a 3.7220839,3.7220834 0 0 1 3.721737,3.72174 3.7220839,3.7220834 0 0 1 -3.721737,3.72225 3.7220839,3.7220834 0 0 1 -3.722254,-3.72225 3.7220839,3.7220834 0 0 1 3.722254,-3.72174 z"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect17605"
+       width="2.2741196"
+       height="1.4859231"
+       x="25.144323"
+       y="257.57635"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1"
+       width="2.2741196"
+       height="1.4859231"
+       x="25.080778"
+       y="269.16309"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8"
+       width="2.2741196"
+       height="1.4859231"
+       x="-265.38437"
+       y="31.296301"
+       transform="rotate(-90)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8-9"
+       width="2.2741196"
+       height="1.4859231"
+       x="-265.2955"
+       y="19.797186"
+       transform="rotate(-90)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8-9-6"
+       width="2.2741196"
+       height="1.4859231"
+       x="-171.30151"
+       y="197.19321"
+       transform="rotate(-45.537866)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8-9-6-4"
+       width="2.2741196"
+       height="1.4859231"
+       x="-171.30518"
+       y="208.8367"
+       transform="rotate(-45.537866)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8-9-6-4-3"
+       width="2.2741196"
+       height="1.4859231"
+       x="-204.86009"
+       y="-164.97505"
+       transform="rotate(-135.53787)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.691749;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect17605-1-8-9-6-4-3-3"
+       width="2.2741196"
+       height="1.4859231"
+       x="-204.96718"
+       y="-176.6879"
+       transform="rotate(-135.53787)"
+       inkscape:export-filename="/media/valerio/86404ec7-5993-49ae-8863-167d46360529/odroid-c2/car-stereo/package/music-player/src/images/path17445.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

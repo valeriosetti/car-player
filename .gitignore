@@ -1,0 +1,5 @@
+output/
+download/
+.bash_history
+.subversion/
+.wget-hsts

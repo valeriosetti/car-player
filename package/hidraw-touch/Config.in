@@ -1,0 +1,4 @@
+config BR2_PACKAGE_HIDRAW_TOUCH
+	bool "Hidraw touch"
+	help
+		Convert raw data from "/dev/hidraw0" to "/dev/uinput"

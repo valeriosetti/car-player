@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/bkwd-icon.png</file>
+        <file>images/config-icon.png</file>
+        <file>images/drawing.svg</file>
+        <file>images/fwd-icon.png</file>
+        <file>images/menu-background-idle.png</file>
+        <file>images/menu-background-pressed.png</file>
+        <file>images/pause-icon.png</file>
+        <file>images/play-icon.png</file>
+        <file>images/player-background-idle.png</file>
+        <file>images/player-background-pressed.png</file>
+        <file>images/radio-icon.png</file>
+        <file>images/usb-icon.png</file>
+        <file>images/background.png</file>
+        <file>images/menu-icon.png</file>
+        <file>music-player-ui.qml</file>
+        <file>custom-objects/CustomButton.qml</file>
+        <file>custom-objects/ListItem.qml</file>
+        <file>custom-objects/MainMenuButton.qml</file>
+        <file>main-menu-ui.qml</file>
+        <file>images/folder-icon.png</file>
+        <file>custom-objects/VolumeSlider.qml</file>
+        <file>images/volume-icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MUSIC_PLAYER
+	bool "Music player"
+	depends on BR2_PACKAGE_QT5BASE
+	depends on BR2_PACKAGE_QT5MULTIMEDIA
+	help
+		That's my music player package.

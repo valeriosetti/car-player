@@ -1,0 +1,6 @@
+[submodule "buildroot"]
+	path = buildroot
+	url = git://git.buildroot.net/buildroot
+[submodule "linux-amlogic-v6.1"]
+	path = linux-amlogic-v6.1
+	url = git@github.com:valeriosetti/linux-amlogic-v6.1.git
