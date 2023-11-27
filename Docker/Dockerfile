@@ -3,9 +3,12 @@
 
 FROM debian:bullseye-20210902
 
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY apt-sources.list /etc/apt/sources.list
+#COPY apt-sources.list /etc/apt/sources.list
 
 RUN 	dpkg --add-architecture i386 \
 	&& \
@@ -48,7 +51,7 @@ RUN 	dpkg --add-architecture i386 \
 	&& \
 	/usr/sbin/locale-gen \
 	&& \
-	useradd -m builder
+	useradd -m builder -u $USER_ID -f $GROUP_ID
 
 USER builder
 WORKDIR /home/builder
