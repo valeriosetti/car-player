@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -e
+
+OFF=0
+USE_DAC=1
+
+case $@ in
+	"line-in")
+		USE_DAC=0
+		;;
+	"dac")
+		USE_DAC=1
+		;;
+	"off")
+		OFF=1
+		;;
+	*)
+		echo "Wrong option. Valid options are: \"off\", \"line-in\" or \"dac\"."
+		exit 1;
+		;;
+esac
+
+if [ $OFF -eq 1 ]; then
+	amixer sset 'Headphone' off
+else
+	amixer sset 'Headphone' on
+	amixer sset 'Headphone' 90
+
+	if [ $USE_DAC ]; then
+		amixer sset 'Headphone Mux' 'DAC'
+	else
+		amixer sset 'Headphone Mux' 'LINE_IN'
+	fi
+fi

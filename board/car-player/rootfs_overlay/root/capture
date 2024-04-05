@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+case $@ in
+	"on")
+		amixer cset name='Capture Switch' on
+		;;
+	"off")
+		amixer cset name='Capture Switch' on
+		;;
+	*)
+		echo "Wrong option. Valid options are: \"off\" and \"on\"."
+		exit 1;
+		;;
+esac
+
+amixer sset 'Capture Mux' 'LINE_IN'
+amixer sset 'AIU AUDIN FIFO0 SRC SEL' 'I2S'

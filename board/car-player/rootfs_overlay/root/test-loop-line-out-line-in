@@ -1,0 +1,55 @@
+#!/bin/bash
+
+set -e
+
+FORMAT="S16_LE"
+CHANNELS=2
+RATE=48000
+
+function print_usage() {
+	echo "Valid parameters are:"
+	echo "    -r: 44100 or 48000"
+	echo "    -s: S16_LE or S24_LE"
+}
+
+
+while getopts r:f: option
+do
+	case "${option}" in
+		f) FORMAT=${OPTARG};;
+		r) RATE=${OPTARG};;
+		*) echo "Wrong option $option."
+			print_usage
+			exit 1
+			;;
+	esac
+done
+
+if [ $RATE -ne 44100 ] && [ $RATE -ne 48000 ]; then
+	echo "Invalid rate: $RATE"
+	print_usage
+	exit 1
+fi
+
+
+if [ "$FORMAT" != "S16_LE" ] && [ "$FORMAT" != "S24_LE" ]; then
+	echo "Invalid format: $FORMAT"
+	print_usage
+	exit 1
+fi
+
+echo "Testing with $FORMAT @ $RATE"
+
+./line-out on
+./capture on
+
+speaker-test -D hw:0,0 -t sine -f 1000 -c $CHANNELS -F $FORMAT -r $RATE > /dev/null &
+PID_SPKT=$!
+
+arecord -D hw:0,2 -c $CHANNELS -f $FORMAT -r $RATE > /dev/null &
+PID_AREC=$!
+
+read -p "Press enter to stop the test"
+
+kill $PID_SPKT
+kill $PID_AREC
