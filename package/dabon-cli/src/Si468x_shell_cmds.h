@@ -4,15 +4,16 @@
 #include "stdint.h"
 
 enum tuner_fw {
-	DAB_FW,
-	FM_FW
+    DAB_FW,
+    FM_FW
 };
 
 typedef struct {
     char* string;
-    int (*func)(void);
-} COMMANDS;
+    int (*func)(int argc, char *argv[]);
+} SHELL_COMMAND;
 
-int start_tuner(COMMANDS** tuner_commands, int* tuner_commands_length);
+extern SHELL_COMMAND shell_commands[];
+extern int shell_commands_count;
 
 #endif //_SI468X_SHELL_CMDS_H_

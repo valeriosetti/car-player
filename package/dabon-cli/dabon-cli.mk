@@ -14,6 +14,7 @@ endef
 
 define DABON_CLI_INSTALL_TARGET_CMDS
 	$(INSTALL) -D -m 0755 $(@D)/dabon-cli $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0666 -D $(@D)/external_firmwares/*.bin -t $(TARGET_DIR)/external_firmwares/
 endef
 
 $(eval $(generic-package))

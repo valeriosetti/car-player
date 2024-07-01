@@ -1,6 +1,9 @@
 #ifndef _SI468x_PLATFORM_H_
 #define _SI468x_PLATFORM_H_
 
+#include <stdint.h>
+#include "Si468x.h"
+
 int Si468x_platform_init();
 int Si468x_platform_deinit();
 
