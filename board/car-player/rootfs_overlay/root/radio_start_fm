@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -e ./dabon-cli ]; then
+    echo "Using local version"
+    DABON=./dabon-cli
+else
+    echo "Using main version"
+    DABON=dabon-cli
+fi
+
+$DABON start_tuner /external_firmwares/rom00_patch.016.bin  /external_firmwares/fmhd_radio_5_0_4.bin
+
+$DABON fm_tune_frequency 93100
+
+$DABON fm_rsq_status

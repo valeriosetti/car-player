@@ -7,7 +7,7 @@ case $@ in
 		amixer cset name='Capture Switch' on
 		;;
 	"off")
-		amixer cset name='Capture Switch' on
+		amixer cset name='Capture Switch' off
 		;;
 	*)
 		echo "Wrong option. Valid options are: \"off\" and \"on\"."

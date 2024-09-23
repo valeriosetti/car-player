@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ -e ./dabon-cli ]; then
+    echo "Using local version"
+    DABON=./dabon-cli
+else
+    echo "Using main version"
+    DABON=dabon-cli
+fi
+
+$DABON start_tuner /external_firmwares/rom00_patch.016.bin  /external_firmwares/dab_radio_5_0_5.bin
+
+OUTPUT=log.txt
+FREQ=30
+$DABON dab_tune_frequency $FREQ
+
+rm $OUTPUT
+
+for VARM in $(seq 0 255 65535); do
+    for VARB in $(seq 0 255 65535); do
+        VARM_HEX=$(printf "%04x" $VARM)
+        VARB_HEX=$(printf "%04x" $VARB)
+
+        echo "== Test $VARM_HEX $VARB_HEX ==" >> $OUTPUT
+        $DABON set_property 1710 $VARM_HEX
+        $DABON set_property 1711 $VARB_HEX
+
+        $DABON dab_tune_frequency $FREQ
+        sleep 0.5
+        $DABON dab_digrad_status | grep -e RSSI -e valid >> $OUTPUT
+    done
+done

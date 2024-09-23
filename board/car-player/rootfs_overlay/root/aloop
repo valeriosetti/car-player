@@ -9,16 +9,16 @@
 set -e
 
 # Known devices:
-# line-in -> hw:0,2
-# headphone -> hw:0,0
+# line-in -> i2sin
+# headphone -> i2sout
 # usb -> hw:1,0
 # bt -> bluealsa
 
 FORMAT="S16_LE"
 CHANNELS=2
 RATE=48000
-SRC="hw:0,2"     # line-in
-DST="hw:0,0"    # headphone
+SRC="i2sin"     # line-in
+DST="i2sout"    # headphone
 
 function print_usage() {
 	echo "Valid parameters are:"
