@@ -2,18 +2,16 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <getopt.h>
+// #include <getopt.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <linux/types.h>
 #include <linux/spi/spidev.h>
 #include <string.h>
-#include <Si468x.h>
-#include <Si468x_platform.h>
 #include <gpiod.h>
 
-#define STRINGIZE_(x) #x
-#define STRINGIZE(x) STRINGIZE_(x)
+#include "si468x.h"
+#include "si468x_platform.h"
 
 #define GPIO_CHIP_PATH        "/dev/gpiochip1"
 #define RESET_PIN        95
@@ -30,7 +28,7 @@ struct gpiod_line *int_line;
 
 int spi_fd;
 
-int Si468x_spi_init()
+int si468x_spi_init()
 {
     uint8_t mode = SPI_MODE_0;
     uint8_t bits = SPI_BITS;
@@ -72,21 +70,19 @@ int Si468x_spi_init()
     return 0;
 }
 
-int Si468x_spi_close()
+int si468x_spi_close()
 {
     return 0;
 }
 
-int Si468x_send_command(uint8_t* data, uint32_t size)
+int si468x_send_command(uint8_t* data, uint32_t size)
 {
     struct spi_ioc_transfer spi_transfer;
     int ret;
     if (data == NULL) {
         return -1;
     }
-    #ifdef ENABLE_DEBUG
-    dump_array(data, size);
-    #endif //ENABLE_DEBUG
+
     memset(&spi_transfer, 0, sizeof(spi_transfer));
     spi_transfer.tx_buf = (unsigned long) data;
     spi_transfer.rx_buf = (unsigned long) NULL;
@@ -100,7 +96,7 @@ int Si468x_send_command(uint8_t* data, uint32_t size)
 }
 
 #define SI468X_CMD_RD_REPLY                0x00
-int Si468x_read_reply(uint8_t* data, uint32_t size, struct Si468x_status* status)
+int si468x_read_reply(uint8_t* data, uint32_t size, struct si468x_status* status)
 {
     struct spi_ioc_transfer spi_transfer[3];
     int transactions_count = 0;
@@ -113,7 +109,7 @@ int Si468x_read_reply(uint8_t* data, uint32_t size, struct Si468x_status* status
     transactions_count++;
     spi_transfer[1].tx_buf = (unsigned long) NULL;
     spi_transfer[1].rx_buf = (unsigned long) status;
-    spi_transfer[1].len = sizeof(struct Si468x_status);
+    spi_transfer[1].len = sizeof(struct si468x_status);
     transactions_count++;
     if (data != NULL) {
         spi_transfer[2].tx_buf = (unsigned long) NULL;
@@ -126,16 +122,13 @@ int Si468x_read_reply(uint8_t* data, uint32_t size, struct Si468x_status* status
         ERROR("SPI ioctl");
         return ret;
     }
-#ifdef ENABLE_DEBUG
-    dump_array((uint8_t*)status, sizeof(struct Si468x_status));
-    dump_array(data, size);
-#endif //ENABLE_DEBUG
+
     return 0;
 }
 
-int Si468x_gpio_init()
+int si468x_gpio_init()
 {
-    int ret, req;
+    int req;
     gpio_chip = gpiod_chip_open(GPIO_CHIP_PATH);
     if (!gpio_chip) {
         ERROR("Error: unable to open %s", GPIO_CHIP_PATH);
@@ -168,64 +161,53 @@ int Si468x_gpio_init()
     return 0;
 }
 
-int Si468x_gpio_close() 
+int si468x_gpio_close() 
 {
     return 0;
 }
 
-int Si468x_gpio_assert_reset()
+int si468x_gpio_assert_reset()
 {
-#ifdef ENABLE_DEBUG
-    TRACE();
-#endif //ENABLE_DEBUG
-
     gpiod_line_set_value(reset_line, 0);
 
     return 0;
 }
 
-int Si468x_gpio_deassert_reset()
+int si468x_gpio_deassert_reset()
 {
-#ifdef ENABLE_DEBUG
-    TRACE();
-#endif //ENABLE_DEBUG
-
     gpiod_line_set_value(reset_line, 1);
     return 0;
 }
 
-uint8_t Si468x_gpio_get_int_status()
+uint8_t si468x_gpio_get_int_status()
 {
-#ifdef ENABLE_DEBUG
-    TRACE();
-#endif //ENABLE_DEBUG
     return gpiod_line_get_value(int_line);
 }
 
-int Si468x_platform_init()
+int si468x_platform_init()
 {
     int ret;
 
-    ret = Si468x_spi_init();
+    ret = si468x_spi_init();
     if (ret)
         return ret;
 
-    ret = Si468x_gpio_init();
+    ret = si468x_gpio_init();
     if (ret)
         return ret;
 
     return 0;
 }
 
-int Si468x_platform_deinit()
+int si468x_platform_deinit()
 {
     int ret;
 
-    ret = Si468x_gpio_close();
+    ret = si468x_gpio_close();
     if (ret)
         return ret;
 
-    ret = Si468x_spi_close();
+    ret = si468x_spi_close();
     if (ret)
         return ret;
 

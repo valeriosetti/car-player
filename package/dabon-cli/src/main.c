@@ -3,9 +3,10 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "Si468x_platform.h"
-#include "Si468x_shell_cmds.h"
-#include "utils.h"
+#include "si468x_platform.h"
+
+#include "shell_cmds.h"
+#include "si468x_utils.h"
 
 void print_commands()
 {
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    ret = Si468x_platform_init();
+    ret = si468x_platform_init();
     if (ret)
         return ret;
 
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    ret = Si468x_platform_deinit();
+    ret = si468x_platform_deinit();
     if (ret)
         return ret;
 

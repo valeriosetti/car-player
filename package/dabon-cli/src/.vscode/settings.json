@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.function": "c",
+        "Kconfig.*": "kconfig",
+        "*.make": "makefile",
+        "si468x_platform.h": "c",
+        "si468x_dab.h": "c",
+        "si468x_fm.h": "c"
+    }
+}
