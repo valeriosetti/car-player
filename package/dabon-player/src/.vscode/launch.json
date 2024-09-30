@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // on the target start GDB server with --> gdbserver :3333 /usr/bin/dabon-player
+        "type": "gdb",
+        "request": "attach",
+        "name": "Attach to remote GDB server",
+        "executable": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/output/build/dabon-player-1.0/dabon-player",
+        "target": "192.168.3.101:3333",
+        "remote": true,
+        "cwd": "${workspaceRoot}",
+        "valuesFormatting": "parseText",
+        "gdbpath": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/output/host/bin/aarch64-buildroot-linux-gnu-gdb",
+        "pathSubstitutions": {
+          "/home/builder/output/build/dabon-player-1.0/": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/package/dabon-player/src/"
+        }
+      },
+      {
+        "name": "g++ build and debug active file",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/player",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "Build"
+      },
+
+    ]
+}

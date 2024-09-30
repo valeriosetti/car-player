@@ -1,0 +1,6 @@
+config BR2_PACKAGE_DABON_CLI
+	bool "dabon-player"
+	help
+		DABon player.
+
+		http://example.com

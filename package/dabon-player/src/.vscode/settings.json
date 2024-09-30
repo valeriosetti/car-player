@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "*.function": "c",
+        "Kconfig.*": "kconfig",
+        "*.make": "makefile",
+        "lv_linux_drm.h": "c",
+        "lv_group_private.h": "c",
+        "lv_group.h": "c",
+        "stdio.h": "c",
+        "*.tcc": "c",
+        "optional": "c",
+        "istream": "c",
+        "ostream": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "regex": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    }
+}
