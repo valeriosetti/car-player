@@ -1,2 +1,2 @@
-SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="sd*", ATTR{partition}=="?", RUN+="/root/automount.sh add %k"
-SUBSYSTEMS=="block", ACTION=="remove", KERNEL=="sd*", ENV{DEVTYPE}=="partition", RUN+="/root/automount.sh remove %k"
+SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="sd*", ATTR{partition}=="?", RUN+="/usr/bin/automount.sh add %k"
+SUBSYSTEMS=="block", ACTION=="remove", KERNEL=="sd*", ENV{DEVTYPE}=="partition", RUN+="/usr/bin/automount.sh remove %k"
