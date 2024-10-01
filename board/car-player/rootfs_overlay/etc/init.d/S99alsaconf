@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+
+configure_alsa()
+{
+	echo "Configure I2S input to capture from Line-In"
+	amixer -q cset name='Capture Switch' on
+	amixer -q sset 'Capture Mux' 'LINE_IN'
+	amixer -q sset 'AIU AUDIN FIFO0 SRC SEL' 'I2S'
+
+	echo "Configure I2S output to use headphone and set volume to 90/128"
+	amixer -q sset 'Headphone Mux' 'DAC'
+	amixer -q sset 'Headphone' on
+	amixer -q sset 'Headphone' 90
+}
+
+case "$1" in
+	start)
+		configure_alsa
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
