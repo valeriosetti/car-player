@@ -1,0 +1,6 @@
+function(find_and_link_library LIB_NAME TARGET)
+    set(OUT_VAR ${LIB_NAME}_VAR)
+    find_library(${OUT_VAR} ${LIB_NAME} REQUIRED)
+    message(STATUS "Linking library ${${OUT_VAR}} to target ${TARGET}")
+    target_link_libraries(${TARGET} ${${OUT_VAR}})
+endfunction()
