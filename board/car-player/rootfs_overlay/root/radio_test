@@ -8,7 +8,7 @@ else
     DABON=dabon-cli
 fi
 
-$DABON start_tuner /external_firmwares/rom00_patch.016.bin  /external_firmwares/dab_radio_5_0_5.bin
+$DABON start_tuner /usr/share/dabon-firmwares/rom00_patch.016.bin  /usr/share/dabon-firmwares/dab_radio_5_0_5.bin
 
 OUTPUT=log.txt
 FREQ=30

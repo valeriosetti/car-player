@@ -16,4 +16,4 @@ case $@ in
 esac
 
 amixer sset 'Capture Mux' 'LINE_IN'
-amixer sset 'AIU AUDIN FIFO0 SRC SEL' 'I2S'
+amixer sset 'AUDIN FIFO0 SRC SEL' 'I2S'

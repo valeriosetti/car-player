@@ -17,8 +17,8 @@ set -e
 FORMAT="S16_LE"
 CHANNELS=2
 RATE=48000
-SRC="i2sin"     # line-in
-DST="i2sout"    # headphone
+SRC="hw:0,3"     # line-in
+DST="hw:0,0"    # headphone
 
 function print_usage() {
 	echo "Valid parameters are:"
@@ -59,7 +59,7 @@ echo "Loop $SRC to $DST with $FORMAT @ $RATE"
 ./headphone dac
 ./capture on
 
-alsaloop -C $SRC -P $DST -c $CHANNELS -r $RATE -f $FORMAT -t 500000 &
+arecord -D $SRC -r $RATE -f $FORMAT -c $CHANNELS | aplay -D $DST -r $RATE -f $FORMAT -c $CHANNELS &
 PID=$!
 
 read -p "Press enter to terminate"

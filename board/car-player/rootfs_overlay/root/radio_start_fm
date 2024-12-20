@@ -8,8 +8,10 @@ else
     DABON=dabon-cli
 fi
 
-$DABON start_tuner /external_firmwares/rom00_patch.016.bin  /external_firmwares/fmhd_radio_5_0_4.bin
+$DABON start_tuner /usr/share/dabon-firmwares/rom00_patch.016.bin  /usr/share/dabon-firmwares/fmhd_radio_5_0_4.bin
 
 $DABON fm_tune_frequency 93100
+
+sleep 2
 
 $DABON fm_rsq_status
