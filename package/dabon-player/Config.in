@@ -1,4 +1,4 @@
-config BR2_PACKAGE_DABON_CLI
+config BR2_PACKAGE_DABON_PLAYER
 	bool "dabon-player"
 	help
 		DABon player.
