@@ -16,12 +16,12 @@ jobs:
           submodules: true
       - name: "Set up Docker Buildx"
         run: |
-          cd Docker
-          ./build.sh
+          ./docker/build.sh
       - name: "Compile and generate images"
         run: |
-          cd Docker
-          ./launch.sh "make car_player_defconfig all"
+          mkdir -p output
+          ls -l
+          ./docker/launch.sh "make car_player_defconfig all"
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
         with:
