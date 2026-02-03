@@ -4,3 +4,6 @@
 [submodule "linux-mainline"]
 	path = linux-mainline
 	url = git@github.com:valeriosetti/linux.git
+[submodule "package/lvgl"]
+	path = package/lvgl
+	url = https://github.com/lvgl/lvgl.git
