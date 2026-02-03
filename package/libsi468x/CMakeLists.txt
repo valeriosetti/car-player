@@ -13,7 +13,10 @@ add_library(si468x STATIC
 
 target_include_directories(si468x PUBLIC .)
 
-find_and_link_library(gpiod si468x)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBGPIOD REQUIRED libgpiod)
+target_include_directories(si468x PRIVATE ${LIBGPIOD_INCLUDE_DIRS})
+target_link_libraries(si468x ${LIBGPIOD_LIBRARIES})
 
 install(FILES
     firmwares/dab_radio_5_0_5.bin
