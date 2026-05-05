@@ -13,7 +13,7 @@
         "valuesFormatting": "parseText",
         "gdbpath": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/output/host/bin/aarch64-buildroot-linux-gnu-gdb",
         "pathSubstitutions": {
-          "/home/builder/output/build/dabon-player-1.0/": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/package/dabon-player/src/"
+          "/home/br-user/output/build/dabon-player-1.0/": "/media/valerio/50b6dc44-c045-4b42-8271-ff96d52c369b/odroid-c2/car-player/package/dabon-player/src/"
         }
       },
       {
