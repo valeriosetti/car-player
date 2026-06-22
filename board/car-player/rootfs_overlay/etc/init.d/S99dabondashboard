@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+
+source /etc/profile.d/xdg.sh
+
+DAEMON="dabon-dashboard"
+PIDFILE="/var/run/${DAEMON}.pid"
+
+start() {
+	printf "Starting %s: " "$DAEMON"
+	start-stop-daemon -S -q -m -p "$PIDFILE" -b -x "/usr/bin/${DAEMON}"
+	if [ $? -eq 0 ]; then
+		echo "OK"
+	else
+		echo "FAIL"
+	fi
+}
+
+stop() {
+	printf "Stopping %s: " "$DAEMON"
+	start-stop-daemon -K -q -p "$PIDFILE"
+	if [ $? -eq 0 ]; then
+		rm -f "$PIDFILE"
+		echo "OK"
+	else
+		echo "FAIL"
+	fi
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart|reload)
+		stop
+		start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
