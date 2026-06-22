@@ -1,6 +1,0 @@
-config BR2_PACKAGE_DABON_RADIO
-	bool "dabon-radio"
-	help
-		DABon radio.
-
-		http://example.com

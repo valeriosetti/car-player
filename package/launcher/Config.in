@@ -1,6 +1,0 @@
-config BR2_PACKAGE_LAUNCHER
-	bool "Apps launcher"
-	help
-		Apps launcher.
-
-		http://example.com

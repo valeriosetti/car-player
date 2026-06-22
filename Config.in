@@ -1,7 +1,3 @@
 source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/dabon-cli/Config.in"
 source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/devmem2/Config.in"
-source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/hidraw-touch/Config.in"
-source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/dabon-player/Config.in"
-source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/dabon-radio/Config.in"
-source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/launcher/Config.in"
 source "$BR2_EXTERNAL_CAR_PLAYER_PATH/package/lvgl/Config.in"
