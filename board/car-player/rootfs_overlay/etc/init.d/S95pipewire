@@ -1,0 +1,88 @@
+#!/bin/sh
+#
+# Start PipeWire and the WirePlumber session manager.
+#
+# This system has no user session / logind, everything runs as root, so we
+# set up XDG_RUNTIME_DIR ourselves and run the daemons system-wide. Clients
+# (e.g. the GStreamer pipewiresink/pipewiresrc in dabon-dashboard) must use
+# the same XDG_RUNTIME_DIR to find the socket.
+
+source /etc/profile.d/xdg.sh
+
+PW_BIN="/usr/bin/pipewire"
+WP_BIN="/usr/bin/wireplumber"
+
+PW_PIDFILE="/run/pipewire.pid"
+WP_PIDFILE="/run/wireplumber.pid"
+
+PW_SOCKET="${XDG_RUNTIME_DIR}/pipewire-0"
+
+start() {
+	# Runtime dir must exist and be private before any daemon starts.
+	mkdir -p "$XDG_RUNTIME_DIR"
+	chmod 0700 "$XDG_RUNTIME_DIR"
+
+	printf 'Starting pipewire: '
+	start-stop-daemon -S -q -m -b -p "$PW_PIDFILE" -x "$PW_BIN"
+	if [ $? -ne 0 ]; then
+		echo "FAIL"
+		return 1
+	fi
+
+	# WirePlumber needs the pipewire socket to be up before it connects.
+	i=0
+	while [ ! -S "$PW_SOCKET" ]; do
+		i=$((i + 1))
+		if [ "$i" -ge 50 ]; then
+			echo "FAIL (socket $PW_SOCKET not ready)"
+			return 1
+		fi
+		sleep 0.1
+	done
+	echo "OK"
+
+	printf 'Starting wireplumber: '
+	start-stop-daemon -S -q -m -b -p "$WP_PIDFILE" -x "$WP_BIN"
+	if [ $? -eq 0 ]; then
+		echo "OK"
+	else
+		echo "FAIL"
+		return 1
+	fi
+}
+
+stop() {
+	printf 'Stopping wireplumber: '
+	start-stop-daemon -K -q -p "$WP_PIDFILE"
+	if [ $? -eq 0 ]; then
+		rm -f "$WP_PIDFILE"
+		echo "OK"
+	else
+		echo "FAIL"
+	fi
+
+	printf 'Stopping pipewire: '
+	start-stop-daemon -K -q -p "$PW_PIDFILE"
+	if [ $? -eq 0 ]; then
+		rm -f "$PW_PIDFILE"
+		echo "OK"
+	else
+		echo "FAIL"
+	fi
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart|reload)
+		stop
+		start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
