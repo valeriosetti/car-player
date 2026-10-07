@@ -1,0 +1,75 @@
+#include "amlogic/meson-gxbb-odroidc2.dts"
+
+&i2c_A {
+	sgtl5000: sgtl5000@a	{
+		status = "okay";
+		compatible = "fsl,sgtl5000";
+		reg = <0x0a>;
+
+		#sound-dai-cells = <0>;
+		clocks = <&clkc CLKID_CTS_AMCLK>;
+
+		VDDA-supply = <&vcc3v3>;
+		VDDIO-supply = <&vcc3v3>;
+
+		// Turn on AMCLK automatically for probing otherwise the device won't
+		// answer on I2C
+		assigned-clocks = <&clkc CLKID_CTS_AMCLK>;
+		assigned-clock-rates = <12288000>;
+
+		/* Configure I2S pins
+		 * I2S IN is not configured because it's the default configuration so
+		 * as long as "pwm_ao_a_6_pins" or "spdif_out_ao_6_pins" are not used,
+		 * then this is fine.
+		 */
+		pinctrl-0 = <&i2s_am_clk_pins>, <&i2s_out_ao_clk_pins>,
+			<&i2s_out_lr_clk_pins>, <&i2s_out_ch01_ao_pins>;
+		pinctrl-names = "default";
+	};
+};
+
+/ {
+	sound {
+		audio-routing = "AUDIN I2S Formatter", "AIU I2S Encoder Capture";
+
+		dai-link-1 {
+			codec-1 {
+				sound-dai = <&sgtl5000>;
+			};
+		};
+
+		dai-link-3 {
+			sound-dai = <&audin 0>;
+		};
+	};
+
+	spi {
+		compatible = "spi-gpio";
+		#address-cells = <0x1>;
+		#size-cells = <0x0>;
+		sck-gpios = <&gpio GPIOX_2 GPIO_ACTIVE_HIGH>;
+		mosi-gpios = <&gpio GPIOX_7 GPIO_ACTIVE_HIGH>;
+		miso-gpios = <&gpio GPIOX_4 GPIO_ACTIVE_HIGH>;
+		cs-gpios = <&gpio GPIOX_1 GPIO_ACTIVE_HIGH>;
+		num-chipselects = <1>;
+
+		spidev@0 {
+			compatible = "rohm,dh2228fv";
+			reg = <0>;
+			status = "okay";
+			spi-max-frequency = <1000000>;
+		};
+	};
+};
+
+&audin {
+	status = "okay";
+};
+
+&usb0_phy {
+	status = "okay";
+};
+
+&usb0 {
+	status = "okay";
+};
