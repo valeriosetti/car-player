@@ -1,0 +1,4 @@
+config BR2_PACKAGE_ALSA_TESTS
+	bool "alsa tests"
+	help
+		ALSA custom tests.
